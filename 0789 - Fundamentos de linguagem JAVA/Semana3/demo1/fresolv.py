@@ -2,6 +2,7 @@
 -b +- raiz(b^2 -4ac)/2a
 
 """
+import math
 
 a = float(input("a: "))
 b = float(input("b: "))
@@ -23,32 +24,17 @@ def calc_int_raiz(a: float, b: float, c:float):
         return False
 
 def fresolv(a:float, b:float, c:float):
-    i = b #calc_int_raiz(a, b, c)
+    i = calc_int_raiz(a, b, c)
 
     # Condição de exclusão
     if div_zero(a) or ( i < 0 ):
         return False
 
-    return True
+    raiz = math.sqrt(i)
 
+    x1 = (-b + raiz) / (a * 2)
+    x2 = (-b - raiz) / (a * 2)
 
+    print(f"x1: {x1}\nx2: {x2}")
 
-print(fresolv(-1, -1, 2))
-
-print(fresolv(-1, 0, 2))
-
-print(fresolv(-1, 1, 2))
-
-
-print(fresolv(0, -1, 2))
-
-print(fresolv(0, 0, 2))
-
-print(fresolv(0, 1, 2))
-
-print(fresolv(9, -1, 2))
-
-print(fresolv(9, 0, 2))
-
-print(fresolv(9, 1, 2))
-
+fresolv(a, b, c)
