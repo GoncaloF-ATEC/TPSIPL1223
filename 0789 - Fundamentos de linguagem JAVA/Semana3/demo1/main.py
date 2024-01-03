@@ -67,10 +67,47 @@ if numero % 2 == 0 and (numero % 5 == 0 or numero == 42):
     print('O numero é par e div por 5 ou 42')
 
 
+if numero == 0:
+    pass
 
 print("--" * 10)
 
 
 def ola_mundo():
-    pass
+    print("Ola Mundo")
 
+
+ola_mundo()
+ola_mundo()
+ola_mundo()
+print("--" * 10)
+
+def ola_mundo2(nome: str):
+    print(f"Ola Mundo, {nome}")
+
+
+ola_mundo2("Joao")
+ola_mundo2("Maria")
+ola_mundo2("Rita")
+ola_mundo2(30)
+
+print("--" * 10)
+
+
+def ola_mundo3(nome: str) -> str:
+    return f"Ola Mundo, {nome}"
+
+n1 = ola_mundo3("Joao") # f"Ola Mundo, Joao"
+n2 = ola_mundo3("Maria") # f"Ola Mundo, Maria"
+n3 = ola_mundo3("Rita") # f"Ola Mundo, Rita"
+
+
+print(n1)
+print(ola_mundo3("Rita"))
+
+
+print("--" * 10)
+
+
+if not 0:
+    print("ok")
