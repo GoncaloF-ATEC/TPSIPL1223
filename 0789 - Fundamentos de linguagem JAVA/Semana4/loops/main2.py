@@ -1,6 +1,8 @@
-from utils import ola_mundo
+from utils import ola_mundo5
 
+nome = input("Digite seu nome: ")
+idade = int(input("Digite a idade: "))
 
+msg = ola_mundo5(nome, idade)
 
-
-ola_mundo()
+print(msg)
