@@ -35,6 +35,8 @@ def fresolv(a:float, b:float, c:float):
     x1 = (-b + raiz) / (a * 2)
     x2 = (-b - raiz) / (a * 2)
 
-    print(f"x1: {x1}\nx2: {x2}")
+    return f"x1: {x1}\nx2: {x2}"
 
-fresolv(a, b, c)
+
+
+print(fresolv(a, b, c))
