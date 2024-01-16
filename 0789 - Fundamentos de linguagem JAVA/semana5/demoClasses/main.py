@@ -67,6 +67,8 @@ def mudar_num(num12: int, num2: int):
 
 print(p1.nome)
 
+mudar_nome(novo_nome="Rui", pessoa=p1)
+mudar_nome("Rui", pessoa=p1)
 mudar_nome("Rui", p1)
 
 print(p1.nome)
