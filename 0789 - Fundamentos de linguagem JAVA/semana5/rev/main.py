@@ -25,3 +25,4 @@ print(10 <= nota <= 20)
 print(10 <= nota and nota <= 20)
 print(range(10, 21).__contains__(nota))
 print(10 in range(10, 21))
+
