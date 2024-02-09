@@ -1,5 +1,5 @@
 import modelos as m
-
+import datetime
 """
 
 
@@ -41,7 +41,7 @@ print(f1)
 print("----" * 10)
 
 g = m.Gato("Tom", 20)
-g2 = m.Gato("Tom", 20)
+g2 = m.Gato("Tom2", 20)
 
 g.peso = 10
 print(g.peso)
@@ -49,3 +49,16 @@ print(g.peso)
 
 print(dir(g))
 print(dir(g2))
+
+
+
+g = m.Gato("gato 1", 20)
+g2 = m.Gato("gato 2", 20)
+f1 = m.Fruta("cor 1", "10", "Oval", "Pera", 1, "lisa", True)
+f2 = m.Fruta("cor 2", 10, "Oval", "Morango", 1, "lisa", True)
+
+
+l = [f1, f2, g, g2]
+
+for item in l:
+    print(item.comestivel)

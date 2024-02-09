@@ -19,10 +19,31 @@ class Fruta:
 
 
 class Gato:
-    nome: str
+    # nome: str
     def __init__(self, nome: str, idade: int = 0): # cira a class
         self.nome = nome
-        self.idade = idade
+        self.__idade = idade
+
 
     def envelhecer(self, anos: int = 1):
         self.idade = anos
+
+    def teste(self):
+        self.__teste()
+    def __teste(self): # private
+        print("Teste")
+
+    def _teste(self):  # protectd
+        print("Teste")
+
+
+g = Gato("", 12)
+g.nome
+
+g2 = Gato("2", 12)
+
+g2.teste()
+
+
+
+
