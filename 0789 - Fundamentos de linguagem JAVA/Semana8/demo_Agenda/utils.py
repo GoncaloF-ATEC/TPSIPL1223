@@ -17,3 +17,43 @@ class DataError(myException):
 
 class divZero(myException):
     pass
+
+
+
+
+
+
+
+
+
+
+"""
+
+somar 2 numeros 
+
+input:
+    num1: int
+    num2: int
+    
+output
+    int 
+
+
+exp
+    soma(2,1) -> 3
+
+"""
+def soma(num1, num2):
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
