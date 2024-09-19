@@ -13,6 +13,8 @@ class MyTestCase(unittest.TestCase):
     def test_isEmpty_test_withDups(self):
         self.assertGreater(len(self.lista2), 0)
 
+    def test_tsum1(self):
+        self.assertEqual(m.ex2(self.lista, 12), (1,2))
 
     def test_noDups(self):
         self.assertEqual(m.ex1(self.lista), False)
