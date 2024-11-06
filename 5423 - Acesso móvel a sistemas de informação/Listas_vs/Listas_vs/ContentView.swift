@@ -9,13 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var pessoas: [Pessoa] = [
-        Pessoa(nome: "Ana", tlm: "912345678"),
-        Pessoa(nome: "Bruno", tlm: "923456789"),
-        Pessoa(nome: "Carlos", tlm: "934567890"),
-        Pessoa(nome: "Diana", tlm: "945678901"),
-        Pessoa(nome: "Eduardo", tlm: "956789012")
-    ]
+    @StateObject var vm = ContentViewModel()
     
     var body: some View {
         List {
@@ -23,9 +17,7 @@ struct ContentView: View {
             
             Section{
                 
-                ForEach(self.pessoas.filter { p in
-                    p.starts(with: "A")
-                }){ elm in
+                ForEach(vm.nomesComecados(com: "A")){ elm in
                     
                     Text(elm.nome)
                 }
@@ -34,10 +26,7 @@ struct ContentView: View {
                 Text("A")
             }
             
-            
-            
-            
-          
+    
         }//List
         .listRowSpacing(5)
         .listStyle(.grouped)

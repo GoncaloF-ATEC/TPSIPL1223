@@ -31,7 +31,7 @@ class Pessoa:Identifiable, Equatable, Comparable{
     }
     
     func starts(with c:String) -> Bool{
-        nome.starts(with: c)
+        nome.lowercased().starts(with: c.lowercased())
     }
     
 }
